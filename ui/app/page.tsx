@@ -1,7 +1,5 @@
-import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import styles from '@/app/ui/home.module.css';
 import Image from 'next/image';
 import { Suspense } from 'react';
 
@@ -15,13 +13,13 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-100 px-6 py-10 md:w-2/5 md:px-20">
           <Image
-            src="/drone.jpg"
-            width={110}
-            height={65}
+            src="/drone.png"
+            width={100} 
+            height={100}
             priority
-            style={{ width: "auto", height: "auto" }}
             alt="Drone Logo"
           />
+          <a href="https://www.freepik.com/icons/drone">Icon by Freepik</a>
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>Welcome to Dronez.</strong>
           </p>
@@ -40,6 +38,7 @@ export default function Page() {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
+              frameBorder={0}
               allowFullScreen
             ></iframe>
           </Suspense>

@@ -6,7 +6,7 @@
     "start": "next start",
     "tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles/index.css",
     "format": "pnpx @biomejs/biome format --write *",
-    "lint": "pnpx @biomejs/biome lint --apply *"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
@@ -30,7 +30,9 @@
     "@types/bcrypt": "^5.0.2",
     "@types/node": "20.14.8",
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.2"
   },
   "pnpm": {
     "overrides": {
